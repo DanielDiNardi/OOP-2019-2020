@@ -35,10 +35,6 @@ public class Main
         // This is not polymorphism
         Cat topcat = new Cat("Topcat");
 
-<<<<<<< HEAD
-        Main main = new Main();
-		main.Loops();
-=======
         // This is polymorphism!
         Animal mino = new Cat("Mino");
         // A vitual method!
@@ -54,7 +50,6 @@ public class Main
 
         Animal a = new Cat("a");
         Animal b = new Cat("b");
->>>>>>> 8f0bb789dfdaf47f8a4e396dbaa9d71e7a1127d7
         
         System.out.println(a);
         System.out.println(b);

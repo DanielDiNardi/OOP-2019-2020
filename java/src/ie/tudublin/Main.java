@@ -39,38 +39,35 @@ public class Main
         // The type is a superclass, the instance is a subclass
 
         // This is not polymorphism
-        Cat topcat = new Cat("Topcat");
+        // Cat topcat = new Cat("Topcat");
 
-<<<<<<< HEAD
-        Main main = new Main();
-		main.Loops();
-=======
-        // This is polymorphism!
-        Animal mino = new Cat("Mino");
-        // A vitual method!
-        // Dynamic binding
-        mino.speak();
-        // This wont compile!!
-        //System.out.println(mino.getNumLives());
-        // This is an example of a cast
-        System.out.println(((Cat)mino).getNumLives());
+        // Main main = new Main();
+		// main.Loops();
+        // // This is polymorphism!
+        // Animal mino = new Cat("Mino");
+        // // A vitual method!
+        // // Dynamic binding
+        // mino.speak();
+        // // This wont compile!!
+        // //System.out.println(mino.getNumLives());
+        // // This is an example of a cast
+        // System.out.println(((Cat)mino).getNumLives());
 
-        mino = new Dog("Misty");  // This will compile!
-        //topcat = new Dog("Tara"); // This wont compile!
+        // mino = new Dog("Misty");  // This will compile!
+        // //topcat = new Dog("Tara"); // This wont compile!
 
-        Animal a = new Cat("a");
-        Animal b = new Cat("b");
->>>>>>> 8f0bb789dfdaf47f8a4e396dbaa9d71e7a1127d7
+        // Animal a = new Cat("a");
+        // Animal b = new Cat("b");
         
-        System.out.println(a);
-        System.out.println(b);
+        // System.out.println(a);
+        // System.out.println(b);
 
-        a = b;
+        // a = b;
 
-        a.setName("c");
+        // a.setName("c");
 
-        System.out.println(a);
-        System.out.println(b);
+        // System.out.println(a);
+        // System.out.println(b);
 
         // c c will get printed out because 
         // a & b are object references

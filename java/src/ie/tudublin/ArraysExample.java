@@ -76,6 +76,57 @@ public class ArraysExample extends PApplet
 		}
 	}
 
+	void graph()
+	{
+		int count = 0;
+		int rainFallValue = 150;
+		int y = 20;
+		int monthCounter = 0;
+		int valueCounter = 0;
+
+		stroke(0,0,100);
+
+		while(count != 16)
+		{
+			text(rainFallValue,20,y);
+			line(50,y,40,y);
+
+			y += 30;
+			rainFallValue -= 10;
+			count++;
+		}
+		line(50,20,50,470);
+
+		int x = 50;
+		int i = 0;
+
+		while(monthCounter != 12)
+		{
+			text(months[i],x, 490);
+			line(x,470,x, 480);
+
+			i++;
+			x += 35;
+			monthCounter++;
+		}
+		line(50,470,440,470);
+
+		int j = 0;
+		int x1 = 50;
+
+		while(valueCounter != 11)
+		{
+			float co = map(rainFall[j],0,150,470,20);
+			float co1 = map(rainFall[j+1],0,150,470,20);
+
+			line(x1,co,x1 + 35,co1);
+			
+			j++;
+			x1 += 35;
+			valueCounter++;
+		}
+	}
+
 	public void keyPressed()
 	{
 		if (key == ' ')
@@ -89,6 +140,7 @@ public class ArraysExample extends PApplet
 		background(0);		
 		colorMode(HSB);	
 
-		drawBarChart();
+		//drawBarChart();
+		graph();
 	}
 }

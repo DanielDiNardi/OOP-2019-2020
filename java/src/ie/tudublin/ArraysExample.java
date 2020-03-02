@@ -203,7 +203,7 @@ public class ArraysExample extends PApplet
 		colorMode(HSB);	
 
 		//drawBarChart();
-		graph();
+		//graph();
 		//drawLineGraph();
 		drawPieChart();
 		stroke(255);
